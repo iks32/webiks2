@@ -1,0 +1,48 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@52.230.97.17
+    DocumentRoot "C:/sampp/htdocs/IP"
+    ServerName 52.230.97.17
+    ErrorLog "logs/tugas.ikbal.tech-error.log"
+    CustomLog "logs/tugas.ikbal.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@tugas.ikbal.tech
+    DocumentRoot "C:/sampp/htdocs/"
+    ServerName tugas.ikbal.tech
+    ErrorLog "logs/tugas.ikbal.tech-error.log"
+    CustomLog "logs/tugas.ikbal.tech-access.log" common
+</VirtualHost>
+<VirtualHost *:443>
+ ServerName tugas.ikbal.tech
+ DocumentRoot "C:/sampp/htdocs/"
+ SSLEngine on
+ SSLCertificateFile "C:/sampp/htdocs/ssl/tugas/certificate.crt"
+ SSLCertificateKeyFile "C:/sampp/htdocs/ssl/tugas/private.key"
+ SSLCertificateChainFile "C:/sampp/htdocs/ssl/tugas/ca_bundle.crt"
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@rude.ikbal.tech
+    DocumentRoot "C:/sampp/htdocs/RUDE"
+    ServerName rude.ikbal.tech
+    ErrorLog "logs/rude.ikbal.tech-error.log"
+    CustomLog "logs/rude.ikbal.tech-access.log" common
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@bro.ikbal.tech
+    DocumentRoot "C:/sampp/htdocs/BRO"
+    ServerName bro.ikbal.tech
+    ErrorLog "logs/bro.ikbal.tech-error.log"
+    CustomLog "logs/bro.ikbal.tech-access.log" common
+</VirtualHost>
+<VirtualHost *:443>
+ ServerName bro.ikbal.tech
+ DocumentRoot "C:/sampp/htdocs/BRO"
+ SSLEngine on
+ SSLCertificateFile "C:/sampp/htdocs/ssl/bro/certificate.crt"
+ SSLCertificateKeyFile "C:/sampp/htdocs/ssl/bro/private.key"
+ SSLCertificateChainFile "C:/sampp/htdocs/ssl/bro/ca_bundle.crt"
+</VirtualHost>
+
